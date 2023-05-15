@@ -1,0 +1,120 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* global */
+body{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: ghostwhite;
+    color: #333;
+}
+
+.container{
+    width: 100%;
+}
+
+/* header */
+
+.container #navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background: red;
+    color: #fff;
+}
+
+.container #navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0px;
+    font-size: 1.5em;
+}
+
+.container #navbar ul li{
+    padding: 10px;
+}
+
+/*body*/
+
+/* welcome */
+.container #welcome-section{
+    margin-top: 70px;
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.container #welcome-section .intro{
+    margin: auto;
+}
+
+/* projects */
+
+.container #projects{
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+}
+
+@media only screen and (max-width: 600px){
+    .container #projects{
+        display: block;
+    }
+}
+
+
+
+
+
+.container #projects #projects-title{
+    text-align: center;
+}
+
+.container #projects .project-tile{
+    width: 300px;
+    height: 250px;
+    border: 1px solid #333;
+    background: white;
+    margin: auto;
+
+}
+
+.container #projects .project-tile .project-name{
+    width: 100%;
+    height: 50px;
+    background: floralwhite;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.container #contact{
+    width: 100vw;
+    height: 200px;
+    text-align: center;
+
+}
+
+.container #contact #hero{
+    margin-top: 40px;
+}
+
+.container #contact #hero-2{
+    margin-top: 40px;
+}
